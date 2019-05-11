@@ -1,54 +1,14 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import {
-  Screen,
-  ScreenWidth,
-  ScreenHeight,
-  isIOS,
-  isAndroid
-} from "@freakycoder/react-native-helpers/helpers/device/DeviceInfo";
-
-import {
-  isIPhoneXFamily,
-  hasNotch,
-  isIPhoneX,
-  isIPhoneXr,
-  isIPhoneXs,
-  isIPhoneXsMax,
-  getStatusBarHeight
-} from "@freakycoder/react-native-helpers/helpers/notch/Notch";
-
-import normalizeText from "@freakycoder/react-native-helpers/helpers/normalize/normalizeText";
-
-import { Card } from "react-native-card-collection";
-import Container from "react-native-card-collection/components/Container/Container";
+import { Card, Container } from "react-native-card-collection";
 
 export default class App extends React.Component {
   renderDeviceInfoContainers() {
     return (
       <View>
-        <Container title="Device OS" subtitle={isIOS ? "iOS" : "Android"} />
-        <Container title="Screen Height" subtitle={ScreenHeight} />
-        <Container title="Screen Width" subtitle={ScreenWidth} />
-      </View>
-    );
-  }
-
-  renderNotchContainers() {
-    return (
-      <View>
-        <Container
-          title="hasNotch?"
-          subtitle={hasNotch() ? "iPhone X Family" : "iPhone Family"}
-        />
-        <Container
-          title="isIPhoneXsMax?"
-          subtitle={isIPhoneXsMax(Screen) ? "iPhone XsMax" : "NOT iPhone XsMax"}
-        />
-        <Container
-          title="getStatusBarHeight?"
-          subtitle={getStatusBarHeight()}
-        />
+        <Container title="Device OS" subtitle="iOS" />
+        <Container title="Screen Height" subtitle="896" />
+        <Container title="Screen Width" subtitle="414" />
       </View>
     );
   }
@@ -58,11 +18,6 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style={styles.titleStyle}>React Native Helpers</Text>
         <Card>{this.renderDeviceInfoContainers()}</Card>
-        <View style={{ marginTop: 24 }}>
-          <Card headerText="Noth Information">
-            {this.renderNotchContainers()}
-          </Card>
-        </View>
       </View>
     );
   }
@@ -76,8 +31,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   },
   titleStyle: {
-    paddingBottom: 36,
+    fontSize: 24,
     fontWeight: "700",
-    fontSize: normalizeText(24)
+    paddingBottom: 36
   }
 });
