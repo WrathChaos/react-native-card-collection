@@ -1,13 +1,14 @@
 {
-  "name": "react-native-card-collections",
+  "name": "react-native-card-collection",
   "version": "0.0.1",
-  "description": "Easy to use & Ready to Go Fully Customizable Awesome Card Collections for React Native.",
+  "description": "Easy to use & Ready to Go Fully Customizable Awesome Card Collection for React Native.",
   "keywords": [
     "ios",
     "android",
     "card",
     "react-native-card",
-    "react-native-card-collections",
+    "react-native-card-collection",
+    "collection",
     "ui-kit",
     "FreakyCoder",
     "freakycoder",
@@ -20,9 +21,9 @@
     "rn"
   ],
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-card-collections/issues",
+  "bugs": "https://github.com/WrathChaos/react-native-card-collection/issues",
   "main": "./lib/src/index.js",
-  "repository": "git@github.com:WrathChaos/react-native-card-collections.git",
+  "repository": "git@github.com:WrathChaos/react-native-card-collection.git",
   "author": "Kuray (FreakyCoder) <kurayogun@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
