@@ -14,6 +14,8 @@ Easy to use & Ready to Go Fully Customizable Awesome Card Collection for React N
 <p align="center">
 <img alt="React Native Card Collection" src="https://github.com/WrathChaos/react-native-card-collection/blob/master/assets/Screenshots/CardExample.png" width="49.7%" />
 </p>
+
+
 ## Installation
 
 Add the dependency:
