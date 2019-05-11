@@ -37,45 +37,54 @@ npm i react-native-card-collection
 
 ## Basic Usage
 
-```ruby
-import { GradientHeader } from "react-native-card-collection";
+```js
+import { Card } from "react-native-card-collection";
+import Container from "react-native-card-collection/components/Container/Container";
 
-<GradientHeader />
+<Card headerText="Device Information">
+    <Container title="Device OS" subtitle"iOS" />
+</Card>
 ```
 
 ## Advanced Usage
-```ruby
-import { GradientHeader } from "react-native-card-collection";
 
-<GradientHeader
-  title="Title"
-  subtitle="Have a nice day Kuray"
-  gradientColors={["#00416A", "#E4E5E6"]}
-  imageSource={require("./assets/profile.jpg")}
-/>
+In advanced usage you can use your own component as children it is all depends on you :) 
+
+```js
+import { Card } from "react-native-card-collection";
+import Container from "react-native-card-collection/components/Container/Container";
+
+<Card headerText="Device Information">
+    {children}
+</Card>
 ```
 
 ## Configuration - Props
 
-| Property               |   Type    |              Default              | Description                                                                |
-| ---------------------- | :-------: | :-------------------------------: | -------------------------------------------------------------------------- |
-| title                  |  string   |               Today               | change the title                                                           |
-| subtitle               |  string   |          Have a nice day          | change the subtitle                                                        |
-| gradient               |  boolean  |               true                | if you do not want gradient background, simply make this prop false        |
-| gradientColors         | [colors]  | ["#12c2e9", "#c471ed", "#f64f59"] | change the gradient colors                                                 |
-| start                  |    x,y    |          { x: 0, y: 0 }           | change the gradient's direction of start                                   |
-| end                    |    x,y    |          { x: 1, y: 0 }           | change the gradient's direction of end                                     |
-| shapeColor             |   color   |              #ba75df              | change solid background color, it is available when gradient prop is false |
-| imageSource            |   image   |           profile image           | change the circle image                                                    |
-| imageOnPress           | function  |               null                | set the onPress function for profile image                                 |
-| position               |   style   |                top                | set the background shape's position                                        |
-| headerContentComponent | component |          chech the code           | set your own design for the header content                                 |
+## Card
+
+| Property   |  Type  |       Default        | Description             |
+| ---------- | :----: | :------------------: | ----------------------- |
+| headerText | string | "Screen Information" | change the Card's title |
+
+### Card's Container
+
+| Property         |  Type  |   Default   | Description                                           |
+| ---------------- | :----: | :---------: | ----------------------------------------------------- |
+| title            | string | "Device OS" | change the Container's title                          |
+| titleColor       | color  |    gray     | change the Container's title color                    |
+| titleFontSize    | number |     13      | change the Container's title font size                |
+| titleStyle       | style  |   default   | set your own style for the Container's title style    |
+| subtitle         | string |     ""      | change the Container's subtitle                       |
+| subtitleColor    | string |  "#222222"  | change the Container's subtitle color                 |
+| subtitleFontSize | string |     15      | change the Container's subtitle font size             |
+| subtitleStyle    | style  |   default   | set your own style for the Container's subtitle style |
+
 
 
 ### ToDos
 
 - [x] LICENSE
-- [ ] Expo Support (Coming Soon)
 - [ ] Write an article about the lib on Medium
 
 
