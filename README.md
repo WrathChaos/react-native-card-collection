@@ -5,6 +5,7 @@ Easy to use & Ready to Go Fully Customizable Awesome Card Collection for React N
 [![npm version](https://img.shields.io/npm/v/react-native-card-collection.svg)](https://www.npmjs.com/package/react-native-card-collection)
 [![npm](https://img.shields.io/npm/dt/react-native-card-collection.svg)](https://www.npmjs.com/package/react-native-card-collection)
 ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg)
+![expo-compatible](https://img.shields.io/badge/Expo-compatible-9cf.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
