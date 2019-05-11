@@ -6,7 +6,7 @@ import {
   ScreenHeight,
   isIOS,
   isAndroid
-} from "./lib/src/helpers/device/DeviceInfo";
+} from "@freakycoder/react-native-helpers/helpers/device/DeviceInfo";
 
 import {
   isIPhoneXFamily,
@@ -16,12 +16,12 @@ import {
   isIPhoneXs,
   isIPhoneXsMax,
   getStatusBarHeight
-} from "./lib/src/helpers/notch/Notch";
+} from "@freakycoder/react-native-helpers/helpers/notch/Notch";
 
-import normalizeText from "./lib/src/helpers/normalize/normalizeText";
+import normalizeText from "@freakycoder/react-native-helpers/helpers/normalize/normalizeText";
 
-import Card from "./src/components/Card/Card";
-import Container from "./src/components/Card/components/Container/Container";
+import { Card } from "react-native-card-collection";
+import Container from "react-native-card-collection/components/Container/Container";
 
 export default class App extends React.Component {
   renderDeviceInfoContainers() {
