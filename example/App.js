@@ -16,7 +16,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.titleStyle}>React Native Helpers</Text>
+        <Text style={styles.titleStyle}>React Native Card Collection</Text>
         <Card>{this.renderDeviceInfoContainers()}</Card>
         <View style={{ marginTop: 32 }}>
           <SettingsCard />
