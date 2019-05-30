@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { Card, Container } from "react-native-card-collection";
+import { Card, Container, SettingsCard } from "react-native-card-collection";
 
 export default class App extends React.Component {
   renderDeviceInfoContainers() {
@@ -18,6 +18,9 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text style={styles.titleStyle}>React Native Helpers</Text>
         <Card>{this.renderDeviceInfoContainers()}</Card>
+        <View style={{ marginTop: 32 }}>
+          <SettingsCard />
+        </View>
       </View>
     );
   }

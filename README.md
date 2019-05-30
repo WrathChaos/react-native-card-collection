@@ -1,6 +1,6 @@
 <img alt="React Native Card Collection" src="https://github.com/WrathChaos/react-native-card-collection/blob/master/assets/logo.png" width="1050"/>
 
-Easy to use & Ready to Go Fully Customizable Awesome Card Collection for React Native.
+Easy to use & Ready to Go Fully Customizable Awesome Card Collections for React Native.
 
 [![npm version](https://img.shields.io/npm/v/react-native-card-collection.svg)](https://www.npmjs.com/package/react-native-card-collection)
 [![npm](https://img.shields.io/npm/dt/react-native-card-collection.svg)](https://www.npmjs.com/package/react-native-card-collection)
@@ -33,6 +33,10 @@ npm i react-native-card-collection
 ```
 "react": ">= 16.x.x",
 "react-native": ">= 0.55.x",
+"react-native-vector-icons": ">= 6.4.2",
+"react-native-material-ripple": ">= 0.8.0",
+"react-native-dynamic-vector-icons": ">= 0.0.3",
+"@freakycoder/react-native-helpers": ">= 0.0.12"
 ```
 
 ## Basic Usage
