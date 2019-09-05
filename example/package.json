@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "@freakycoder/react-native-custom-text": "0.0.12",
-    "@freakycoder/react-native-helpers": "0.0.12",
-    "expo": "^32.0.0",
-    "react": "16.5.0",
+    "@freakycoder/react-native-helpers": "0.0.21",
+    "expo": "^34.0.4",
+    "react": "16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-card-collection": "0.0.13",
-    "react-native-dynamic-vector-icons": "0.0.3",
+    "react-native-dynamic-vector-icons": "0.1.0",
     "react-native-material-ripple": "^0.8.0",
     "react-native-vector-icons": "^6.4.2"
   },
